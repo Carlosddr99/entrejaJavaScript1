@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-
+    <script src="js/myscript.js"></script>
     <title> STOP STUDYING WITH DOGS </title>
     <link rel="stylesheet" type="text/css" href="./css/estiloInicio.css" /> 
 </head>
@@ -53,7 +53,7 @@
                 <label class="procesoPago">16.000$</label>
             </div><br>
             <div id="dineroImporte">
-                <button class="itemPagar">Donar</button><br>
+                <button class="itemPagar" onclick="abirDialogo()">Donar</button><br>
                 <label class="itemPagar">Introduce el importe a donar:</label><br>
                 <input type="number">
             </div>
@@ -141,7 +141,14 @@
             </div>
         </div>
     </div>
-
+    <dialog id="dialogo">
+        <label>Importe a donar:</label><br>
+        <input id="importeDialog" type ="number">
+        <label>Nombre:</label><br>
+        <input id="nombreDialogo" type ="text">
+        <label>Comentario:</label><br>
+        <input id="comentarioDialogo" type ="text">
+    </dialog>
     <br><br>
     <footer>
         <label>PolityCarlos, PBC © 2023</label>
