@@ -1,0 +1,228 @@
+body{
+    background-color: rgba(241, 232, 232, 0.767);
+    margin: 0px;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: column;
+}
+#cabeceraContenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 190px;
+    padding-right: 60px;
+    background-color: rgb(121, 47, 190);
+}
+#mainBody{
+    margin: 10px;
+}
+
+#imgLogo{
+    height: 80px;
+    margin: 3px;
+    border: 3px solid rgb(28, 26, 26);
+}
+#titulo{
+    display: flex;
+    font-size: 50px;
+    padding: 2px;
+    color: rgb(253, 212, 5);
+    justify-content: center;
+    background-color: rgb(55, 29, 80);
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+#navCabecera{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: flex-end;
+    margin-right: 10%;
+
+}
+.enlaceCabecera{
+    margin-left: 15px;
+    color: whitesmoke;
+    text-decoration:none;
+}
+#navContenedos{
+    display: block;
+}
+a:hover{
+    background-color: darkgoldenrod;
+}
+
+#informaciónProceso{
+    font-size: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#infoPago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin-right: 40px;
+}
+#infoProceso{
+    
+    display: flex;
+    flex-direction: row;
+    padding-right: 3 px;
+    padding: 5px;
+    justify-items: center;
+}
+
+button{
+width: 100px;
+}
+#dineroImporte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoDonantes{
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+.grupos{
+    font-size: 28px;
+    color:rgb(55, 55, 115) ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#parteIntroduccion{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.contenedorColumna{
+    width: 700px;
+    margin-right: 10%;
+    font-size: 20px;
+    margin-left: 25px;
+
+
+}
+
+#imagenPerro{
+    width: 600px;
+    height: 300px;
+
+}
+.descripcion{
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+#recursosPromocion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#infomacionCreadores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    flex-wrap: wrap
+}
+
+
+#infomacionCreadores div  img{
+    height: 350px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#infomacionCreadores div  label{
+    height: 350px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.imagenCentrada{
+    display: flex;
+    padding-left: 15%;
+}
+
+
+#infomacionCreadores div{
+    width: 550px;
+}
+#infomacionCreadores #primerCreador{
+    margin-right: 19%;
+    width: 550px;
+}
+
+#creadores{
+    margin-left: 25px;
+}
+
+#dscExtensaInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+#descripcionExtensa{
+margin-left: 25px;
+font-size: 20px;
+
+}
+
+#dscExteTexto{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+video{
+    height:500px;
+    width: 100%;
+}
+
+.nombreDonate{
+    font-size: 20px;
+    color: rgb(11, 11, 182);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.comentarioDonante{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    color: rgb(13, 13, 13);
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    flex-wrap: wrap
+
+}
+
+footer a{
+    margin-bottom: 5px;
+    text-decoration:none;
+    color: rgb(13, 13, 13);
+}
+
+a{
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif
+}
