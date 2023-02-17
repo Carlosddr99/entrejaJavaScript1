@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <head>
-    <script src="js/myscript.js"></script>
     <title> STOP STUDYING WITH DOGS </title>
     <link rel="stylesheet" type="text/css" href="./css/estiloInicio.css" /> 
 </head>
@@ -48,9 +47,9 @@
     <div id="informaciónProceso">
         <div >
             <div id="infoPago">
-                <label class="procesoPago">5.000$</label>
-                <progress class="procesoPago" max="16.000" value="5.000">5.000</progress>
-                <label class="procesoPago">16.000$</label>
+                <label id="labelPagado" class="procesoPago">5000$</label>
+                <progress id="barraProgreso" class="procesoPago" max="16000" value="3000">5.000</progress>
+                <label class="procesoPago">16000$</label>
             </div><br>
             <div id="dineroImporte">
                 <button class="itemPagar" onclick="abirDialogo()">Donar</button><br>
@@ -61,7 +60,7 @@
         
         <div id="infoDonantes">
             <div><strong>Number of Donor:</strong></div>
-            <diV>15</diV>
+            <div id="numeroDonantes">15</div>
             <br>
             <div><strong>Fecha cierre donación:</strong></div>
             <div>27/02/2023</div>
@@ -83,40 +82,52 @@
                 <div class="grupos"><strong> Donors Comments </strong></div>
             <br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
-                    <div class="comentarioDonante">Mucho ánimo, sois geniales!!</div>
+                    <div id="donorNameOne" class="nombreDonate"><strong>Lucía Díaz</strong></div>
+                    <div  class="pagoDonante">
+                        <div id="donorPayComentarioOne" class="dineroPagado">15$</div>
+                        <div id="donorTimeComentarioOne">1d</div>
+                    </div><br>
+                    <div id="donorCommentOne" class="comentarioDonante">Mucho ánimo, sois geniales!!</div>
                 </div> <br><br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
-                    <div class="comentarioDonante">Me encanta el proyecto, seguid así.</div>
+                    <div id="donorNameTwo" class="nombreDonate"><strong>Lucas Suaréz</strong></div>
+                    <div  class="pagoDonante">
+                        <div id="donorPayComentarioTwo" class="dineroPagado">30$</div>
+                        <div id="donorTimeComentarioTwo">1d</div>
+                    </div><br>
+                    <div id="donorCommentTwo" class="comentarioDonante">Me encanta el proyecto, seguid así.</div>
                 </div><br><br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Tara María</strong></div><br>
-                    <div class="comentarioDonante">Si ayudamos entre todos lo conseguiremos.</div>
+                    <div id="donorNameThree" class="nombreDonate"><strong>Tara María</strong></div>
+                    <div  class="pagoDonante">
+                        <div id="donorPayComentarioThree" class="dineroPagado">20$</div>
+                        <div id="donorTimeComentarioThree">1d</div>
+                    </div><br>
+                    <div id="donorCommentThree" class="comentarioDonante">Si ayudamos entre todos lo conseguiremos.</div>
                 </div><br>
             </div>
             <div>
                 <div class="grupos"><strong> Donors Pays </strong></div>
                 <br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
-                    <div class="pagoDonante">
-                        <div class="dineroPagado">20$</div>
-                        <div>2d</div>
+                    <div id="donorNameOnePay" class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
+                    <div  class="pagoDonante">
+                        <div id="donorPayOne" class="dineroPagado">15$</div>
+                        <div id="donorTimeOne">1d</div>
                     </div>
                 </div> <br><br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
-                    <div class="pagoDonante">
-                        <div class="dineroPagado">20$</div>
-                        <div>2d</div>
+                    <div id="donorNameTwoPay" class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
+                    <div  class="pagoDonante">
+                        <div id="donorPayTwo" class="dineroPagado">30$</div>
+                        <div id="donorTimeTwo">2d</div>
                     </div>                
                 </div><br><br>
                 <div class="donante">
-                    <div class="nombreDonate"><strong>Tara María</strong></div><br>
-                    <div class="pagoDonante">
-                        <div class="dineroPagado">20$</div>
-                        <div>2d</div>
+                    <div id="donorNameThreePay" class="nombreDonate"><strong>Tara María</strong></div><br>
+                    <div  class="pagoDonante">
+                        <div id="donorPayThree" class="dineroPagado">20$</div>
+                        <div id="donorTimeThree">3d</div>
                     </div>
                 </div>
             </div>
@@ -180,7 +191,7 @@
             <textarea  id="comentarioDialogo"></textarea><br>
             <div id="botonesDialog">
                 <button id="botonCancelar" onclick="cerrarDialogo()">Cancelar</button>
-                <button id="botonAceptar">Aceptar</button>
+                <button id="botonAceptar" onclick="validarDonacion()">Aceptar</button>
             </div>
         </dialog>
     </div>
@@ -194,4 +205,7 @@
         <a  href="inicio.html">Login</a>
     </footer>
 </div>
+
+<script src="js/myscript.js"></script>
+
 </body>
