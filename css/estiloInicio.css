@@ -226,3 +226,40 @@ footer a{
 a{
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif
 }
+
+#botonesDialog{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#dialogo{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#dialogoContenedor{
+    visibility:hidden;
+}
+
+#informacionDonantes{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagoDonante{
+    display: flex;
+    flex-direction: row;
+}
+
+.dineroPagado{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#contenedorComentarios{
+    margin-right: 20px;
+}

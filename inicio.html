@@ -55,7 +55,7 @@
             <div id="dineroImporte">
                 <button class="itemPagar" onclick="abirDialogo()">Donar</button><br>
                 <label class="itemPagar">Introduce el importe a donar:</label><br>
-                <input type="number">
+                <input id="inputImporte" type="number">
             </div>
         </div>     
         
@@ -79,20 +79,47 @@
             <figcaption>Imagen de perro usado en experimento</figcaption>
         </figure>
         <div id="informacionDonantes">
-            <div class="grupos"><strong> Donors Comments </strong></div>
+            <div id="contenedorComentarios">
+                <div class="grupos"><strong> Donors Comments </strong></div>
             <br>
-            <div class="donante">
-                <div class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
-                <div class="comentarioDonante">Mucho ánimo, sois geniales!!</div>
-            </div> <br><br>
-            <div class="donante">
-                <div class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
-                <div class="comentarioDonante">Me encanta el proyecto, seguid así.</div>
-            </div><br><br>
-            <div class="donante">
-                <div class="nombreDonate"><strong>Tara María</strong></div><br>
-                <div class="comentarioDonante">Si ayudamos entre todos lo conseguiremos.</div>
-            </div><br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
+                    <div class="comentarioDonante">Mucho ánimo, sois geniales!!</div>
+                </div> <br><br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
+                    <div class="comentarioDonante">Me encanta el proyecto, seguid así.</div>
+                </div><br><br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Tara María</strong></div><br>
+                    <div class="comentarioDonante">Si ayudamos entre todos lo conseguiremos.</div>
+                </div><br>
+            </div>
+            <div>
+                <div class="grupos"><strong> Donors Pays </strong></div>
+                <br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Lucía Díaz</strong></div><br>
+                    <div class="pagoDonante">
+                        <div class="dineroPagado">20$</div>
+                        <div>2d</div>
+                    </div>
+                </div> <br><br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Lucas Suaréz</strong></div><br>
+                    <div class="pagoDonante">
+                        <div class="dineroPagado">20$</div>
+                        <div>2d</div>
+                    </div>                
+                </div><br><br>
+                <div class="donante">
+                    <div class="nombreDonate"><strong>Tara María</strong></div><br>
+                    <div class="pagoDonante">
+                        <div class="dineroPagado">20$</div>
+                        <div>2d</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -141,15 +168,22 @@
             </div>
         </div>
     </div>
-    <dialog id="dialogo">
-        <label>Importe a donar:</label><br>
-        <input id="importeDialog" type ="number">
-        <label>Nombre:</label><br>
-        <input id="nombreDialogo" type ="text">
-        <label>Comentario:</label><br>
-        <input id="comentarioDialogo" type ="text">
-    </dialog>
     <br><br>
+    <div id="dialogoContenedor">
+        <dialog id="dialogo">
+            <h2>Donación proyecto</h2>
+            <label >Importe a donar:</label>
+            <input  id="importeDialog" type ="number"><br>
+            <label >Nombre:</label>
+            <input  id="nombreDialogo" type ="text"><br>
+            <label  >Comentario:</label>
+            <textarea  id="comentarioDialogo"></textarea><br>
+            <div id="botonesDialog">
+                <button id="botonCancelar" onclick="cerrarDialogo()">Cancelar</button>
+                <button id="botonAceptar">Aceptar</button>
+            </div>
+        </dialog>
+    </div>
     <footer>
         <label>PolityCarlos, PBC © 2023</label>
         <a  href="inicio.html">Confianza y seguridad</a>
